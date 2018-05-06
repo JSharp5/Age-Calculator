@@ -1,0 +1,17 @@
+<div id="age">age</div>
+
+<script type="text/javascript">
+
+ageCalc();
+
+function ageCalc() {
+
+dob = new Date("09/03/1992");
+var today = new Date();
+var age = Math.floor((today-dob) / (365.25 * 24 * 60 * 60 * 1000));
+
+ document.getElementById("age").textContent = age;
+	
+}
+
+</script>
